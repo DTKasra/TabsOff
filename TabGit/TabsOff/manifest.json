@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "TabsOff",
+  "description": "do you want to hide tabs? well, TabsOff Is here to help. using javascript, it launches a duplicate window of the site, but the difference is it has no tabs. the icon is a GNU GPL v3 license, as well as the project. ",
+  "version": "0.1",
+  "background": {
+    "scripts": ["background.js"]
+  },
+"content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["content.js"]
+  }
+],
+  "browser_action": {
+    "default_icon": "icon.png"
+  }
+}
